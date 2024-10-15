@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cipia-FS10 Configurator (main)</title>
+	<link rel="stylesheet" href="css/styleMain.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<div class="image-container">
+					<img src="img/Cipia_Logo.jpg" alt="logo" style="width: 250px;">
+				</div>
+			<td>
+		</tr>
+		<tr>
+			<td>
+				<div style="text-align: center; padding: 20px;">
+				<h2>Select an option to load:</h2>
+				<form id="FS10_submitForm">
+					<select name="options" id="options">
+						<option value=0>LTE</option>
+						<option value=1>Wi-Fi</option>
+						<option value=2>Wi-Fi in the Office</option>
+						<option value=3>RS232</option>
+						<option value=4>RS232 Hybrid</option>
+						<option value=5>Mobileye</option>
+						<option value=6>Mobileye + Dashcam</option>
+						<option value=7>LTE + Dashcam</option>
+					</select>
+					<br>
+					<br>
+					<button type="submit">Submit</button>
+				</form>
+				</div>
+			<td>
+		</tr>
+	</table>
+	<script src="script_init.js"></script>
+	<script src="js/JSON_Scripts.js"></script>
+	<script>
+		document.getElementById('FS10_submitForm').addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevent the default form submission behavior
+
+			// Get the selected option value
+			const selected_JSON_case = parseInt(document.getElementById('options').value);
+
+			// Store the value in localStorage
+			localStorage.setItem('selected_JSON_case', selected_JSON_case);
+	
+		  	// Redirect to configurator.html
+			window.location.href = 'configurator.html';
+		});
+	</script>	  
+</body>
+</html>

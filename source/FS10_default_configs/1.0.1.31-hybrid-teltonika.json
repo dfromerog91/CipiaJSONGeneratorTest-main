@@ -1,0 +1,652 @@
+{
+  "version": "1.0",
+  "ConfigurationName": "1.0.1.31-hybrid-teltonika",
+  "IGNOnFilter": 3,
+  "IGNOffFilter": 15,
+  "SleepModeTO": 5,
+  "ServerAddress": "fs1.cipia.cloud",
+  "Port": 1883,
+  "ServerPassword": "fs1Manager@2021",
+  "CommChannelState": "RS232",
+  "commChannelSettings": 
+  {
+	"Video": "Wifi"
+  },
+  "APNSettings": {
+    "APN": "",
+    "User": "",
+    "Password": ""
+  },
+  "WiFiTO": 5,
+  "WifiSettings": {
+    "APModeEnable": true,
+    "APSSID": "FS-WiFi",
+    "APPassword": "1234567890",
+	"Networks":	[
+		{
+			"Password": "",
+			"SSID": ""
+		}
+	]
+  },
+  "BLESettings": {
+    "Mode": true,
+    "PasswordKey": "123456",
+    "SelfName": "FS-BLE"
+  },
+  "RS232Settings": {
+    "Baud": 115200,
+    "DataBits": 8,
+    "Parity": false,
+    "StopBit": 1
+  },
+  "InstallerAccessCode": "Cipia2021$",
+  "EventVideoLen": {
+    "Before": 7,
+    "After": 3
+  },
+  "VideoOverlay": {
+    "Enable": true,
+    "TimeOffset": 0,
+    "TimeSource": "Cell"
+  },
+  "EventsStorageNumber": 1000,
+  "VideosStorageNumber": 250,
+  "ContRecording": 8,
+  "MicStatus": false,
+  "DriverFeedbackOptions": {
+    "LED": true,
+    "Beeps": true,
+    "Voice": true
+  },
+  "SpeakerVolume": 80,
+  "DriverAsleepEventSpeakerVolume": 100,
+  "SpeakerControl": true,
+  "SystemLEDActivation": true,
+  "DriverDisappearTimeThreshold": 30,
+  "TelematicsDataForwardOptions": "EventAndImage",
+  "ResolutionOfUploadedVideo": 1,
+  "ResolutionOfUploadedImage": 1,
+  "MinSpeedMonitorThreshold": 10,
+  "Acc3DDriveTimeFilter": 5,
+  "Acc3DStopTimeFilter": 3,
+  "GPSFixLossOrRecoveryTime": 15,
+  "MaxHeadingAngleForEvents": 15,
+  "GPInputs": {
+    "VoltageThreshold": 0.7,
+    "ActiveLevel": false,
+    "StateDuration": 20,
+    "SpecialFunction": "Other"
+  },
+  "GPIO": {
+    "State": "In",
+    "ActiveLevel": false,
+    "StateDuration": 20,
+    "VoltageThreshold": 0.7,
+    "SpecialFunction": "Other"
+  },
+  "GPOut": {
+    "Source": "LED",
+    "Length": 5,
+    "Frequency": 1,
+    "DutyCycle": 50
+  },
+  "MainButtonSettings": {
+    "DeviceTurnOnEnable": false,
+    "SelfEventTriggerEnable": true
+  },
+  "CommunicationWatchdog": {
+    "KeepAliveInSec": 180,
+    "SocketResetTimeInMin": 15,
+    "ModemResetSignalTimeInMin": 5,
+    "ModemResetHWTimeInMin": 5,
+    "SelfPowerRecycleTimeInMin": 5,
+    "RepeatCycleUntilCommRecovery": true
+  },
+  "VoiceNotificationsLang": 0,
+  "EventsSettings": {
+    "SystemBoot": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "SystemBootFailure": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "SystemReset": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "EnteredSleepMode": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "IgnitionOn": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "DriverIdentified": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "IgnitionOff": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "MovementStarted": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "MovementStop": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "UnidentifiedUnauthDriver": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "DriverDisappeared": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "DriverChange": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "DriverDistracted": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "LightDrowsiness": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "Drowsiness": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "DriverAsleep": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "PhoneUse": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "Smoking": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "Seatbelt": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": true,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": false
+    },
+    "SystemError": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "SystemOk": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "CameraCalibrationCompleted": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "3DAccelerometerCalibrationCompleted": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "ExternalEventTriggering": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "DMS",
+      "Activation": true
+    },
+    "TamperingDetection": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": true
+    },
+    "DriverIDUpdated": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "SingleDMS",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "Heartbeat": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "GpsStatusUpdate": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "ForwardCollisionWarning": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "Both",
+      "Activation": false
+    },
+    "Tailgating(HMW)": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "Both",
+      "Activation": false
+    },
+    "LaneDepartureWarning": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "Both",
+      "Activation": false
+    },
+    "OverSpeeding": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": false,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "StopDisobeyed": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": false,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "RunningRedLight": {
+      "FeedbackVisual": false,
+      "FeedbackAudio": false,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": false,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "PedestrianCollisionWarning": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "Both",
+      "Activation": false
+    },
+    "UrbanForwardCollisionWarning": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": false,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "None",
+      "Activation": false
+    },
+    "CameraCalibrationFailed": {
+      "FeedbackVisual": true,
+      "FeedbackAudio": true,
+      "FeedbackSpeech": true,
+      "FeedbackOutput": false,
+      "ReportEvent": true,
+      "ReportImage": "None",
+      "ReportFootage": "Both",
+      "Activation": true
+    },
+    "ApplicationError": {
+      "Activation": false,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": false,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "None"
+    },
+    "FwUpdateCompleted": {
+      "Activation": true,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": false,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "None"
+    },
+    "FwUpdateFailed": {
+      "Activation": true,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": false,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "None"
+    },
+    "FwUpdateStarted": {
+      "Activation": true,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": false,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "None"
+    },
+    "MCULOG": {
+      "Activation": true,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": false,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "None"
+    },
+    "CameraError": {
+      "Activation": true,
+      "FeedbackAudio": false,
+      "FeedbackOutput": false,
+      "FeedbackSpeech": false,
+      "FeedbackVisual": true,
+      "ReportEvent": true,
+      "ReportFootage": "None",
+      "ReportImage": "Both"
+    }            
+  },
+  "SerialProtocolSettings": {
+    "serial_protocol": {
+        "little_endian": true,
+        "mtu": 900,
+        "outgoing_inter_packet_delay": 75,
+        "outgoing_packets": {
+			"FleetSenseBinaryData": {
+				"active": true,
+					"fields": [
+						{
+							"data": "90A3A3",
+							"type": "fixed"
+						},
+						{
+							"type": "data"
+						}
+					],
+				"id": 1
+				}
+			},
+			"incoming_packets": {}
+        }
+    },
+  "ExtraParameters": {
+    "GSensorWakeThreshold": 30,
+    "RemoteBluetoothMAC": "00:00:00:00:00:00",
+    "MqttClientAuth": false,
+    "CipiaLog": false,
+    "WifiCountryCode": "US",
+    "OTAMessageBackOff": {
+      "Asleep": 0,
+      "LightDrowsiness": 15,
+      "Drowsiness": 15,
+      "DriverDistracted": 1,
+      "Seatbelt": 10,
+      "PhoneUse": 5,
+      "Smoking": 5,
+      "FCW": 0,
+      "PCW": 0,
+      "UFCW": 5,
+      "LDW": 5,
+      "Tailgating": 5
+    },
+    "OTAClosureEvent": {
+      "Asleep": false,
+      "LightDrowsiness": false,
+      "Drowsiness": false,
+      "DriverDistracted": false,
+      "Seatbelt": false,
+      "PhoneUse": false,
+      "Smoking": false,
+      "FCW": false,
+      "PCW": false,
+      "UFCW": false,
+      "LDW": false,
+      "Tailgating": false
+    },
+    "Calibration": {
+      "Timeout": 30
+    },
+    "CalibrationReferencePoint": {
+      "x": 110.0,
+      "y": 0.0,
+      "z": 10.0
+    },
+    "DsEngineParams": {
+      "PreStartSetParams": {
+        "LeftHandDrive": true,
+		"SeatbeltAlertTime": 15,
+		"SmokingBackoffTimer" : 120
+      },
+      "PostStartSetParams": {
+      }
+    },
+    "OTAupdateEnable": true,
+    "HeartbeatConfig": {
+      "IGNOnInterval": 300,
+      "IGNOffInterval": 60,
+      "TimeToWaitGPSFix": 120
+    }
+  },
+  "VehicleConfig": {
+    "VehicleCategory": "LCV"
+  },
+  "AdasConfig": {
+    "Type": "Disabled",
+    "AdasCamera": {
+      "InstallationHeight": 150,
+      "OffsetFromCenter": 0
+    },
+    "ActiveLaneDepartureType": {
+      "DashedLaneCrossing": true,
+      "SolidLaneCrossing": true,
+      "SpeedThreshold": 20
+    },
+    "Tailgating": {
+      "TtcWarningRange": 2,
+      "TtcEmergencyRange": 0.8,
+      "TimeToTriggerTailgating": 5,
+      "HMWSpeedThreshold": 35
+    },
+    "FCW": {
+      "FCWlevel": 2,
+      "SpeedThreshold": 20
+    }
+  },
+  "SDCardSettings": {
+    "EncryptSDCard": false
+  },
+  "SIMLOCK": {
+    "Active": false,
+    "AllowedNetworks": []
+  }
+}
